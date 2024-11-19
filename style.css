@@ -9,7 +9,7 @@ body {
 /* Hero Section */
 .hero-section {
     background: linear-gradient(to right, #007bff, #00c6ff);
-    color: white;
+    color: red;
 }
 
 .carousel-caption h1 {
