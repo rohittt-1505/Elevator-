@@ -233,9 +233,6 @@ footer .social-icons a:hover {
     .form-control {
         margin-bottom: 10px;
     }
-    .navbar-brand{
-        margin-left: 90px;
-    }
     .navbar{
         opacity: 0.8;
     }
@@ -273,23 +270,6 @@ footer .social-icons a:hover {
     }
 }
 
-/* Further Adjustments for Very Small Screens (Phones) */
-@media (max-width: 480px) {
-    .navbar-brand {
-        font-size: 1rem; /* Even smaller font size on very small screens */
-    }
-
-    .navbar-nav .nav-link {
-        font-size: 0.85rem; /* Smaller font size for nav items */
-        padding: 5px 8px; /* Reduce padding more */
-    }
-
-    .navbar-toggler {
-        padding: 5px;
-    }
-}
-
-
 /* Fix Navbar at the top */
 .navbar {
     position: fixed;      /* Fix navbar at the top */
@@ -297,4 +277,5 @@ footer .social-icons a:hover {
     left: 0;              /* Align to the left edge */
     width: 100%;          /* Make the navbar take the full width */
     z-index: 1000;        /* Ensure it stays above other content */
+   
 }
