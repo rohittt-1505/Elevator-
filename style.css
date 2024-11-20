@@ -4,6 +4,7 @@ body {
     color: #333;
     margin: 0;
     padding: 0;
+    background-color: #f8f9fa;
 }
 
 /* Hero Section */
@@ -24,10 +25,10 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    background-color: rgba(0, 0, 0, 0); /* Semi-transparent background for readability */
+    background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent background for readability */
     padding: 20px;
     border-radius: 10px;
-    width: 100%; /* Ensures the caption takes full width */
+    width: 100%;
     box-sizing: border-box; /* Keeps padding included in width */
 }
 
@@ -102,7 +103,7 @@ h5 {
 
 /* FAQ Accordion */
 .accordion-button {
-    background-color: #007bff;
+    background: linear-gradient(to right, #ffcc00, #ff6600);
     color: #fff;
     border: none;
     font-weight: bold;
@@ -110,13 +111,15 @@ h5 {
 }
 
 .accordion-button:not(.collapsed) {
-    background-color: #0056b3;
+    background: #0056b3;
     color: #fff;
 }
 
 .accordion-body {
     font-size: 0.95rem;
     background-color: #f8f9fa;
+    padding: 20px;
+    border-top: 1px solid #ddd;
 }
 
 /* Contact Form */
@@ -212,5 +215,20 @@ footer .social-icons a:hover {
         height: 50px;
         font-size: 1.25rem;
         line-height: 48px;
+    }
+
+    /* FAQ Section */
+    #faq h2 {
+        font-size: 2rem;
+    }
+
+    .accordion-button {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+
+    .accordion-body {
+        font-size: 1rem;
+        padding: 15px;
     }
 }
