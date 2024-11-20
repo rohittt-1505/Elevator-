@@ -25,7 +25,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
     /* Semi-transparent background for readability */
     padding: 20px;
     border-radius: 10px;
@@ -95,56 +95,64 @@ h5 {
 
 /* Testimonials */
 #testimonials .card {
-    /* background: linear-gradient(to right, #ffcc00, #ff6600); */
-    background-color: rgb(221, 219, 219);
-    color: black;
+    background: linear-gradient(to right, #ffcc00, #ff6600);
+    color: white;
 }
 
 #testimonials .card h5 {
     font-weight: bold;
 }
 
-/* FAQ Section */
-#faq .accordion-button {
+/* FAQ Accordion */
+.accordion-button {
+    background: linear-gradient(to right, #ffcc00, #ff6600);
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.accordion-button:not(.collapsed) {
+    background: #0056b3;
+    color: #fff;
+}
+
+.accordion-body {
+    font-size: 0.95rem;
     background-color: #f8f9fa;
-    color: #495057;
-    font-weight: 500;
-}
-
-#faq .accordion-button:not(.collapsed) {
-    background-color: #e9ecef;
-    color: #495057;
-}
-
-#faq .accordion-body {
-    background-color: #ffffff;
-    color: #212529;
+    padding: 20px;
+    border-top: 1px solid #ddd;
 }
 
 /* Contact Form */
-form {
-    max-width: 800px;
-    margin: 0 auto;
+form input,
+form textarea {
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    padding: 0.75rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
 }
 
-form input, form textarea {
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    padding: 12px;
-    font-size: 1rem;
+form input:focus,
+form textarea:focus {
+    border-color: #0056b3;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
 form button {
-    background-color: #007bff;
+    background: linear-gradient(to right, #007bff, #00c6ff);
     color: white;
-    font-size: 1.1rem;
     border: none;
-    padding: 12px 24px;
-    border-radius: 5px;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    transition: background 0.3s ease;
 }
 
 form button:hover {
-    background-color: #0056b3;
+    background: linear-gradient(to right, #0056b3, #007bff);
+    transform: scale(1.05);
 }
 
 /* Footer */
@@ -227,4 +235,48 @@ footer .social-icons a:hover {
         font-size: 1rem;
         padding: 15px;
     }
+}
+
+
+/* FAQ Section */
+#faq .accordion-button {
+    background-color: #f8f9fa;
+    color: #495057;
+    font-weight: 500;
+}
+
+#faq .accordion-button:not(.collapsed) {
+    background-color: #e9ecef;
+    color: #495057;
+}
+
+#faq .accordion-body {
+    background-color: #ffffff;
+    color: #212529;
+}
+
+/* Contact Form */
+form {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+form input, form textarea {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 12px;
+    font-size: 1rem;
+}
+
+form button {
+    background-color: #007bff;
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+}
+
+form button:hover {
+    background-color: #0056b3;
 }
