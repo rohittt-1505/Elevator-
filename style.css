@@ -233,4 +233,58 @@ footer .social-icons a:hover {
     .form-control {
         margin-bottom: 10px;
     }
+    .navbar-brand{
+        margin-left: 90px;
+    }
+    .navbar{
+        opacity: 0.8;
+    }
+    .navbar-toggler-icon{
+        height: 20px;
+        width: 20px;
+    }
+}
+/* Navbar Size Adjustment for Smaller Screens */
+@media (max-width: 768px) {
+    /* Reduce navbar height */
+    .navbar {
+        padding: 5px 15px; /* Reduce padding */
+    }
+
+    /* Adjust navbar brand font size */
+    .navbar-brand {
+        font-size: 1.25rem; /* Smaller font size */
+    }
+
+    /* Adjust navbar links */
+    .navbar-nav .nav-link {
+        font-size: 0.9rem; /* Smaller font size */
+        padding: 8px 10px; /* Reduce padding of nav items */
+    }
+
+    /* Adjust the toggler button size */
+    .navbar-toggler {
+        padding: 5px 10px;
+    }
+
+    /* Adjust the logo size (if needed) */
+    .navbar-brand img {
+        max-height: 30px; /* Adjust logo size if there's an image */
+    }
+}
+
+/* Further Adjustments for Very Small Screens (Phones) */
+@media (max-width: 480px) {
+    .navbar-brand {
+        font-size: 1rem; /* Even smaller font size on very small screens */
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 0.85rem; /* Smaller font size for nav items */
+        padding: 5px 8px; /* Reduce padding more */
+    }
+
+    .navbar-toggler {
+        padding: 5px;
+    }
 }
