@@ -25,11 +25,13 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent background for readability */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Semi-transparent background for readability */
     padding: 20px;
     border-radius: 10px;
     width: 100%;
-    box-sizing: border-box; /* Keeps padding included in width */
+    box-sizing: border-box;
+    /* Keeps padding included in width */
 }
 
 .carousel-caption h1 {
@@ -123,7 +125,8 @@ h5 {
 }
 
 /* Contact Form */
-form input, form textarea {
+form input,
+form textarea {
     border: 1px solid #007bff;
     border-radius: 5px;
     padding: 0.75rem;
@@ -131,7 +134,8 @@ form input, form textarea {
     margin-bottom: 1rem;
 }
 
-form input:focus, form textarea:focus {
+form input:focus,
+form textarea:focus {
     border-color: #0056b3;
     outline: none;
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
