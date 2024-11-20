@@ -17,15 +17,33 @@ body {
     object-fit: cover;
 }
 
+/* Carousel Text */
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%; /* Ensures the caption takes full width */
+    box-sizing: border-box; /* Keeps padding included in width */
+}
+
 .carousel-caption h1 {
     font-size: 3rem;
     font-weight: 700;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+    color: white;
+    margin-bottom: 10px;
 }
 
 .carousel-caption p {
     font-size: 1.25rem;
-    margin-top: 0.5rem;
+    color: #ddd;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    margin: 0;
 }
 
 /* Navbar */
